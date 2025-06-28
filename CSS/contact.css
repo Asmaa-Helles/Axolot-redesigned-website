@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    width: 80%;
+}
+
+
+.navbar {
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d080;
+    z-index: 30;
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 5px #9d9d9d68;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin: 0 15px;
+    padding: 0 1px;
+    font-weight: 400;
+    color: #222222;
+
+}
+
+
+.nav-item .nav-link:hover {
+    color: #506cea;
+    text-shadow: 1px 1px 1px #fff;
+
+}
+
+.nav-item .nav-link.active {
+    color: #506cea !important;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #fff;
+
+}
+
+.navbar-brand span {
+    color: #506CEA;
+}
+
+/****Home****/
+.ptb-100 {
+    padding: 100px 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+.Contact-home {
+    background-color: #506CEA;
+    margin-top: 78px;
+    padding: 100px 0 100px;
+    position: relative;
+}
+
+.Contact-home .col-lg-12 {
+    position: relative;
+    z-index: 22;
+}
+
+.Contact-home .col-lg-12 h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Contact-home .col-lg-12 h2,
+.Contact-home .col-lg-12 p,
+.Contact-home .col-lg-12 p a {
+    color: #fff;
+    text-shadow: 2px -1px 1px #506CEA;
+
+}
+
+
+
+.Contact-home .col-lg-12 p a {
+    text-decoration: none;
+}
+
+.Contact-home .col-lg-12 p i {
+    font-size: 14px;
+}
+
+.Contact-home img {
+    position: absolute;
+    bottom: -90px;
+    z-index: 4;
+}
+
+.Contact-home::after {
+    content: url(../images/bg-top.png);
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+.Contact-home::before {
+    content: url(../images/bg-bottom.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Contact-home::after,
+    .Contact-home::before {
+        display: none;
+    }
+}
+
+/****Contact-info*****/
+.contact-info {
+    background-color: #EDF5FF;
+}
+
+.contact-info .col-lg-4 .info {
+    height: 150px;
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 48px;
+    border-radius: 5px;
+    transition: all .4s ease-out;
+    box-shadow: 2px 2px 6px 0 rgba(151, 147, 147, 0.15);
+}
+
+
+.contact-info .col-lg-4 .info:hover {
+    box-shadow: 0 0 30px 0 rgba(67, 67, 67, .15);
+    transform: translateY(-5px)
+}
+
+.contact-info .col-lg-4 .info .info-title {
+    text-align: left;
+}
+
+.contact-info .col-lg-4 .info h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.contact-info .col-lg-4 .info a {
+    text-decoration: none;
+    color: #5a5a5ac4;
+    display: block;
+}
+
+.contact-info .col-lg-4 .info a:hover {
+    color: #506cead0;
+}
+
+.contact-info .col-lg-4 .info i {
+    color: #506CEA;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px dashed #506CEA;
+    border-radius: 50%;
+    margin: 0 20px;
+    transition: all .4s ease-out;
+}
+.contact-info .col-lg-4 .info:hover i{
+    border-style:solid;
+    background-color: #506CEA;
+    color: #fff;
+
+}
+
+
+.contact-info .col-lg-6 p{
+    color: #8f8f8f;
+}
+
+.contact-info input {
+    padding: 15px ;
+}
+
+
+.btn-primary {
+    margin-right: 15px;
+    background-color: #506CEA;
+    border-color: #506CEA;
+}
+
+
+a.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+a.btn::after {
+    content: " ";
+    display: block;
+    width: 45px;
+    height: 200px;
+    background-color: #ffffff87;
+    position: absolute;
+    bottom: -150%;
+    left: -150%;
+    transform: rotate(-40deg);
+    transition: all 0.4s ease;
+}
+
+a.btn:hover::after {
+    bottom: -50%;
+    left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/****footer*****/
+footer {
+    background-image: url(../images/pattern-4.png);
+    background-attachment: fixed;
+}
+
+footer .single-footer {
+    text-align: left;
+
+}
+
+footer h4 {
+    font-weight: 600;
+}
+
+footer .axolot h4 span {
+    color: #506CEA;
+}
+
+footer .axolot h4 {
+    font-weight: 700;
+}
+
+footer .container.ptb-100 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .container.ptb-100 ul li {
+    margin: 8px 0 0;
+}
+
+
+
+footer .container.ptb-100 ul li a {
+    text-decoration: none;
+    color: #6F8BA4;
+}
+
+footer .container.ptb-100 ul li:hover a {
+    color: #506CEA;
+}
+
+footer .container.ptb-100 ul li:hover {
+    transform: translateX(10px);
+}
+
+footer .container .contact p {
+    margin: 0 0 10px;
+}
+
+footer .container .contact ul li {
+    margin-bottom: 10px;
+    color: #737373;
+    position: relative;
+    padding-left: 25px
+}
+
+footer .container .contact ul li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #506cea;
+    font-size: 20px
+}
+
+footer .copyright-area {
+    background-color: #EDF5FF;
+    padding: 40px 0;
+}
+
+footer .copyright-area .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright-area .container p {
+    color: #000;
+}
+
+footer .copyright-area .container p span {
+    color: #506CEA;
+    font-weight: 600;
+}
+
+footer .copyright-area .container .socials a {
+    padding: 0;
+}
+
+footer .copyright-area .container .socials a,
+footer .copyright-area .container .socials a i,
+footer ul li,
+footer ul li a {
+    transition: all .4s ease-in-out;
+
+}
+
+footer .copyright-area .container .socials a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #506CEA;
+    margin-left: 4px;
+    border: 1px solid #506CEA;
+    border-radius: 50%;
+}
+
+footer .copyright-area .container .socials a:hover i {
+    color: #FFF;
+    background-color: #506CEA;
+
+}
